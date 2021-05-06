@@ -5,11 +5,11 @@ const DefaultButton = props => {
         props.onClick();
     };
     const handleClick = () => {
-        alert('button clicked');
+        props.onClick ? props.onClick() : console.log('onClicked!');
     };
     return (
-        <button type="button" className="outlined" onClick={() => {handleClick()}}>
-            button
+        <button type="button" className={props.selected ? "contained" : "outlined"} onClick={() => {handleClick()}}>
+            {props.title}
         </button>
     );
 };

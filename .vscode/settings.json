@@ -3,6 +3,7 @@
         "mainmenu",
         "nextjs",
         "offcanvas",
-        "sonicx"
+        "sonicx",
+        "swiper"
     ]
 }

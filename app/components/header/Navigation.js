@@ -86,11 +86,14 @@ const Navigation = () => {
                     </Link>
                     <ul className="dropdown">
                         <li>
-                            <Link href='/home-one'><a>Hà Nội VIP</a></Link>
+                            <Link href='/home-one'><a>Xổ Số Miền Bắc</a></Link>
                         </li>
                         <li>
-                            <Link href='/home-two'><a>Hồ Chí Minh VIP</a></Link>
+                            <Link href='/home-two'><a>Đặc Biệt 18h25</a></Link>
                         </li>
+                        <li>
+                            <Link href='/home-two'><a>Xổ số cào</a></Link>
+                        </li>				
                     </ul>
                 </li>
             </ul>

@@ -195,7 +195,7 @@
 
     color: #FFF;
     border: none;
-    background: #343538;
+    background: rgb(255, 136, 1);
 
     &:hover,
     &:focus {
@@ -225,7 +225,8 @@
 
     height: 100%;
 
-    background-color: #FFF;
+    // background-color: #FFF;
+    background-image: linear-gradient(180deg, #42413d, #000,);
     box-shadow: 0 0 87px 0 rgba(0, 0, 0, 0.09);
 }
 
@@ -348,7 +349,7 @@
 
                 padding: 10px 0;
 
-                color: #111;
+                color: #ddd;
                 &:hover {
                     color: $theme-color;
                 }
