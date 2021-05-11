@@ -36,7 +36,7 @@ const App = props => {
   };
   const updateUnit = (index) => {
     setUnitState(prevUnit => {
-      const list = prevUnit.map((e, i) => { if (i == index) return !e; return e; });
+      const list = prevUnit.map((e, i) => { if (i == index) return !e; return e; });cle
       return list;
     })
   };
