@@ -5,7 +5,7 @@ import Navigation from '../components/header//Navigation';
 import MobileMenu from '../components/header/MobileMenu';
 import HeaderBtn from '../components/header/HeaderBtn';
 
-const Header = ({theme}) => {
+const Header = props => {
     const [scroll, setScroll] = useState(0);
     const [headerTop, setHeaderTop] = useState(0);
 
@@ -31,11 +31,7 @@ const Header = ({theme}) => {
             <div className="container-fluid">
                 <div className="row align-items-center">
                     <div className="col-lg-2 col-xl-2 col-6">
-                        <Logo
-                            image={
-                                theme === "white" ? "/images/logo/logo.png" : "/images/logo/logo.png"
-                            }
-                        />
+                        <Logo image="/images/logo/logo.png" />
                     </div>
                     <div className="col-lg-7 col-xl-8 d-none d-lg-block">
                         <Navigation />
@@ -49,9 +45,5 @@ const Header = ({theme}) => {
         </header>
     );
 }
-
-Header.propTypes = {
-    theme: PropTypes.string
-  };
 
 export default Header;

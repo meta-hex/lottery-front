@@ -1,12 +1,15 @@
 import PropTypes from 'prop-types';
 import Header from '../containers/Header';
-import React from 'react';
+import React, {useEffect} from 'react';
 
-const Layout = ({children, theme}) => {
+const Layout = props => {
+    useEffect(() => {
+        // console.log(props.children);
+    }, []);
     return (
         <React.Fragment>
-            <Header theme={theme}/>
-            {children}
+            <Header/>
+            {props.children}
         </React.Fragment> 
     );
 }

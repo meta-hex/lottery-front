@@ -1,5 +1,5 @@
-import Head from 'next/head';
 import Link from 'next/link';
+import {useRouter} from 'next/router';
 import React, {useState, useEffect} from 'react'
 import DefaultButton from '../app/components/buttons/DefaultButton';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -10,6 +10,10 @@ import ResultTable from '../app/containers/ResultTable';
 import BetContentTable from '../app/containers/BetContentTable';
 import BetHistoryTable from '../app/containers/BetHistoryTable';
 const App = props => {
+  const router = useRouter();
+  useEffect(() => {
+    router.push('nothern/nothern-lottery');
+  }, [])
   const [state_dozen, setDozenState] = useState([false, false, false, false, false, false, false, false, false, false]);
   const [state_unit, setUnitState] = useState([false, false, false, false, false, false, false, false, false, false]);
   /* set numbers dozen*/
@@ -36,7 +40,7 @@ const App = props => {
   };
   const updateUnit = (index) => {
     setUnitState(prevUnit => {
-      const list = prevUnit.map((e, i) => { if (i == index) return !e; return e; });cle
+      const list = prevUnit.map((e, i) => { if (i == index) return !e; return e; });
       return list;
     })
   };
